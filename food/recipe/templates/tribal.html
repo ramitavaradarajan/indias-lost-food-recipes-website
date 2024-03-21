@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribal Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-image {
+            max-width: 100%;
+            height: 1200 x 630 pixels;
+            border-radius: 5px;
+        }
+
+        h2, h3, p, ul, ol, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        .ingredients-list, .steps-list {
+            margin-top: 10px;
+        }
+
+        .recipe-steps {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="recipe-container">
+        <h1>Tribal Recipes</h1>
+
+        <div class="recipe">
+            <h2>Mahua Laddu</h2>
+            <img src={% static 'mahua laddu.jpeg' %} alt="Saag Paneer Image" class="recipe-image">
+            <ul class="ingredients-list">
+                <li>1 cup mahua flowers</li>
+                <li>1 cup jaggery</li>
+                <li>1/2 tsp cardamom powder</li>
+                <li>2 tbsp ghee</li>
+            </ul>
+
+            <div class="recipe-steps">
+                <h3>Steps:</h3>
+                <ol class="steps-list">
+                    <li>Clean the mahua flowers and remove the stems.</li>
+                    <li>Grind the jaggery and mahua flowers together to make a smooth paste.</li>
+                    <li>Heat ghee in a pan and add the mahua-jaggery paste. Cook on low heat until the mixture thickens.</li>
+                    <li>Add cardamom powder and mix well.</li>
+                    <li>When the mixture is cool enough to handle, shape into small balls.</li>
+                    <li>Let the laddus cool completely before storing in an airtight container.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-container">
+        <h1>Paat Badi Recipe</h1>
+        <img src={% static 'paat badi.jpeg' %} alt="Paat badi Image" class="recipe-image">
+
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+            <li>1 cup urad dal (split black gram)</li>
+            <li>1/2 teaspoon salt</li>
+            <li>1/4 teaspoon red chili powder</li>
+            <li>1/4 teaspoon turmeric powder</li>
+            <li>1/4 teaspoon asafoetida (hing)</li>
+            <li>Oil for deep frying</li>
+        </ul>
+
+        <div class="recipe-steps">
+            <h3>Steps:</h3>
+            <ol class="steps-list">
+                <li>Soak urad dal in water for 4-5 hours.</li>
+                <li>Drain the water and grind the dal into a smooth paste.</li>
+                <li>Add salt, red chili powder, turmeric powder, and asafoetida to the paste and mix well.</li>
+                <li>Take a clean, dry cloth and spread it out.</li>
+                <li>Wet your hands and take a small portion of the dal paste.</li>
+                <li>Shape the paste into a small, round disc and place it on the cloth.</li>
+                <li>Repeat the process until all the paste is used up. Make sure the discs do not touch each other.</li>
+                <li>Let the discs dry in the sun for 1-2 days until they become hard and crispy.</li>
+                <li>Once dry, store the paat badi in an airtight container.</li>
+                <li>To cook, deep fry the paat badi in hot oil until they puff up and become golden brown.</li>
+                <li>Serve with your favorite curry or chutney.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe-container">
+        <h1>Bongulo Recipe</h1>
+        <img src="{% static 'bongulo.jpeg' %}" alt="Bongulo" class="recipe-image">
+
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+            <li>1 cup rice flour</li>
+            <li>1/2 cup jaggery powder</li>
+            <li>1/2 cup grated coconut</li>
+            <li>1/4 cup sesame seeds</li>
+            <li>1/4 cup peanuts</li>
+            <li>1/4 cup cashew nuts</li>
+            <li>1/4 cup raisins</li>
+            <li>1/4 teaspoon cardamom powder</li>
+            <li>Ghee for greasing</li>
+        </ul>
+
+        <div class="recipe-steps">
+            <h3>Steps:</h3>
+            <ol class="steps-list">
+                <li>Dry roast sesame seeds, peanuts, cashew nuts, and raisins separately and keep them aside.</li>
+                <li>In a large bowl, mix rice flour, jaggery powder, grated coconut, and cardamom powder.</li>
+                <li>Add the dry fruits and nuts to the bowl and mix well.</li>
+                <li>Gradually add water to the mixture and knead it into a soft dough.</li>
+                <li>Grease a steaming plate with ghee and spread the dough evenly on it.</li>
+                <li>Steam the dough for 15-20 minutes on medium flame.</li>
+                <li>Once done, let it cool and cut into small pieces.</li>
+                <li>Serve with tea or coffee.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe-container">
+        <h1>Kodi Sheekulu Recipe</h1>
+        <img src="{% static 'kodi sheekulu.jpeg' %}" alt="Kodi Sheekulu" class="recipe-image">
+
+        <h3>Ingredients:</h3>
+        <ul class="ingredients-list">
+            <li>1 cup rice flour</li>
+            <li>1/2 cup jaggery powder</li>
+            <li>1/2 cup grated coconut</li>
+            <li>1/4 cup sesame seeds</li>
+            <li>1/4 cup peanuts</li>
+            <li>1/4 cup cashew nuts</li>
+            <li>1/4 cup raisins</li>
+            <li>1/4 teaspoon cardamom powder</li>
+            <li>Ghee for greasing</li>
+        </ul>
+
+        <div class="recipe-steps">
+            <h3>Steps:</h3>
+            <ol class="steps-list">
+                <li>Dry roast sesame seeds, peanuts, cashew nuts, and raisins separately and keep them aside.</li>
+                <li>In a large bowl, mix rice flour, jaggery powder, grated coconut, and cardamom powder.</li>
+                <li>Add the dry fruits and nuts to the bowl and mix well.</li>
+                <li>Gradually add water to the mixture and knead it into a soft dough.</li>
+                <li>Grease a steaming plate with ghee and spread the dough evenly on it.</li>
+                <li>Steam the dough for 15-20 minutes on medium flame.</li>
+                <li>Once done, let it cool and cut into small pieces.</li>
+                <li>Serve with tea or coffee.</li>
+            </ol>
+        </div>
+    </div>
+
+
+
+    
+    </div>
+
+</body>
+</html>

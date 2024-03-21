@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Indian Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h2, h3, p, ul, ol, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        .ingredients-list, .steps-list {
+            margin-top: 10px;
+        }
+
+        .recipe-steps {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="recipe-container">
+        <h1>North Indian Recipes</h1>
+
+        <div class="recipe">
+            <h2>Rajma Chawal</h2>
+            <img src="{% static 'rajma.jpeg' %}" alt="Rajma Chawal Image" class="recipe-image">
+
+            <h3>Ingredients:</h3>
+            <ul class="ingredients-list">
+                <li>1 cup Kidney beans (Rajma), soaked overnight</li>
+                <li>1 cup Basmati rice</li>
+                <li>1 Onion, finely chopped</li>
+                <li>2 Tomatoes, chopped</li>
+                <li>1 tablespoon Ginger-garlic paste</li>
+                <li>1 teaspoon Cumin seeds</li>
+                <li>1 teaspoon Red chili powder</li>
+                <li>1/2 teaspoon Turmeric powder</li>
+                <li>1 teaspoon Garam masala</li>
+                <li>Coriander leaves, for garnish</li>
+                <li>Salt, to taste</li>
+            </ul>
+
+            <div class="recipe-steps">
+                <h3>Steps:</h3>
+                <ol class="steps-list">
+                    <li>Boil soaked kidney beans until they are tender. Set aside.</li>
+                    <li>Cook basmati rice and set aside.</li>
+                    <li>In a pan, heat oil, add cumin seeds, and sauté onions until golden brown.</li>
+                    <li>Add ginger-garlic paste, chopped tomatoes, red chili powder, turmeric powder, and garam masala. Cook until the oil separates.</li>
+                    <li>Add boiled kidney beans and cook for another 10 minutes. Add salt to taste.</li>
+                    <li>Garnish with coriander leaves. Serve with steamed rice (chawal).</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe">
+            <h2>Tehri</h2>
+            <img src="{% static 'tehri.jpeg' %}" alt="Tehri Image" class="recipe-image">
+
+            <h3>Ingredients:</h3>
+            <ul class="ingredients-list">
+                <li>1 cup Basmati rice</li>
+                <li>1 Potato, peeled and diced</li>
+                <li>1 Carrot, diced</li>
+                <li>1 Onion, finely chopped</li>
+                <li>1 Tomato, chopped</li>
+                <li>1/2 cup Green peas</li>
+                <li>1/2 cup Cauliflower florets</li>
+                <li>2 Green chilies, chopped</li>
+                <li>1 tablespoon Ginger-garlic paste</li>
+                <li>1/2 teaspoon Turmeric powder</li>
+                <li>1 teaspoon Cumin seeds</li>
+                <li>1 teaspoon Mustard seeds</li>
+                <li>2-3 Cloves</li>
+                <li>2-3 Green cardamom pods</li>
+                <li>1 Bay leaf</li>
+                <li>2 tablespoons Ghee or oil</li>
+                <li>Fresh coriander leaves, for garnish</li>
+                <li>Salt, to taste</li>
+            </ul>
+
+            <div class="recipe-steps">
+                <h3>Steps:</h3>
+                <ol class="steps-list">
+                    <li>Wash and soak basmati rice in water for 30 minutes. Drain and set aside.</li>
+                    <li>In a pan, heat ghee or oil. Add cumin seeds, mustard seeds, cloves, green cardamom pods, and bay leaf. Sauté until the spices release aroma.</li>
+                    <li>Add chopped onions, green chilies, and ginger-garlic paste. Sauté until onions are golden brown.</li>
+                    <li>Add diced potatoes, carrots, cauliflower, green peas, and chopped tomatoes. Cook for a few minutes until the vegetables are slightly tender.</li>
+                    <li>Add turmeric powder and salt. Mix well.</li>
+                    <li>Add soaked and drained basmati rice. Stir gently to coat the rice with the vegetable mixture.</li>
+                    <li>Add water (1.5 to 2 cups) and bring it to a boil. Reduce heat, cover, and simmer until the rice is cooked and water is absorbed.</li>
+                    <li>Garnish with fresh coriander leaves. Fluff the rice with a fork and serve hot.</li>
+                </ol>
+            </div>
+        </div>
+
+
+        <div class="recipe">
+            <h2>Galic Naan</h2>
+            <img src="{% static 'garlic.jpeg' %}" alt="Galic Naan Image" class="recipe-image">
+        
+            <h3>Ingredients:</h3>
+            <ul class="ingredients-list">
+                <li>2 cups All-purpose flour</li>
+                <li>1 teaspoon Salt</li>
+                <li>1/2 cup Water</li>
+                <li>1 tablespoon Ghee or oil</li>
+                <li>1 tablespoon Sugar</li>
+                <li>1/2 teaspoon Baking powder</li>
+                <li>1/2 teaspoon Baking soda</li>
+                <li>1/2 teaspoon Fennel seeds</li>
+                <li>1/2 teaspoon Coriander seeds</li>
+                <li>1/2 teaspoon Cumin seeds</li>
+                <li>1/2 teaspoon Mustard seeds</li>
+                <li>1/2 teaspoon Turmeric powder</li>
+                <li>1/2 teaspoon Red chili powder</li>
+                <li>1/2 teaspoon Garlic powder</li>
+            </ul>
+        
+            <div class="recipe-steps">
+                <h3>Steps:</h3>
+                <ol class="steps-list">
+                    <li>In a mixing bowl, combine all the dry ingredients.</li>
+                    <li>In a separate bowl, mix the wet ingredients (water, ghee, and sugar).</li>
+                    <li>Gradually add the wet ingredients to the dry ingredients, mixing well after each addition.</li>
+                    <li>Knead the dough for a few minutes until it becomes smooth and elastic.</li>
+                    <li>Divide the dough into 8 equal portions.</li>
+                    <li>Roll out each portion into a thin round circle, about 1/2 inch thick.</li>
+                    <li>Heat a non-stick skillet or griddle over medium heat. Add ghee or oil to the skillet.</li>
+                    <li>Cook each naan on the skillet until golden brown, flipping once halfway through.</li>
+                    <li>Serve hot with yourfavorite curry or dip.</li>
+                </ol>
+            </div>
+        </div>
+
+
+        <div class="recipe">
+            <h2>Dal Makhani</h2>
+            <img src="{% static 'dal makhani.jpeg' %}" alt="Dal Makhani Image" class="recipe-image">
+        
+            <h3>Ingredients:</h3>
+            <ul class="ingredients-list">
+                <li>1 cup split moong dal</li>
+                <li>1 cup water</li>
+                <li>1/2 cup ghee or oil</li>
+                <li>1/2 cup tomato puree</li>
+                <li>1/2 cup yogurt</li>
+                <li>1/2 teaspoon turmeric powder</li>
+                <li>1/2 teaspoon red chili powder</li>
+                <li>1/2 teaspoon garlic powder</li>
+                <li>1/2 teaspoon ginger powder</li>
+                <li>1/2 teaspoon coriander powder</li>
+                <li>1/2 teaspoon cumin powder</li>
+                <li>1/2 teaspoon poppy seeds</li>
+                <li>1/2 teaspoon fennel seeds</li>
+                <li>1/2 teaspoon cardamom powder</li>
+                <li>1/2 teaspoon mustard seeds</li>
+                <li>Salt to taste</li>
+            </ul>
+        
+            <div class="recipe-steps">
+                <h3>Steps:</h3>
+                <ol class="steps-list">
+                    <li>In a mixing bowl, combine the split moong dal and water. Let it soak for 30 minutes.</li>
+                    <li>In a separate bowl, mix the ghee or oil with the tomato puree, yogurt, turmeric powder, red chili powder, garlic powder, ginger powder, coriander powder, cumin powder, poppy seeds, fennel seeds, cardamom powder, and mustard seeds.</li>
+                    <li>Drain the moong dal and add it to a pressure cooker with the mixed ingredients from step 2. Cook for 3-4 whistles or until the dal is soft and mushy.</li>
+                    <li>Add salt to taste and mix well.</li>
+                    <li>Serve hot with rice or roti.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe">
+            <h2>Palak Paneer</h2>
+            <img src="{% static 'paalak paneer.jpeg' %}" alt="Palak Paneer Image" class="recipe-image">
+        
+            <h3>Ingredients:</h3>
+            <ul class="ingredients-list">
+                <li>1 cup paneer, cubed</li>
+                <li>1 cup spinach, chopped</li>
+                <li>1/2 cup onion, chopped</li>
+                <li>1/2 cup tomato, chopped</li>
+                <li>1/2 teaspoon ginger paste</li>
+                <li>1/2 teaspoon garlic paste</li>
+                <li>1/2 teaspoon cumin seeds</li>
+                <li>1/2 teaspoon coriander powder</li>
+                <li>1/2 teaspoon turmeric powder</li>
+                <li>1/2 teaspoon red chili powder</li>
+                <li>1/2 teaspoon garam masala powder</li>
+                <li>1/2 cup water</li>
+                <li>1/2 cup cream</li>
+                <li>1/2 teaspoon salt</li>
+                <li>1/2 teaspoon sugar</li>
+                <li>1/2 teaspoon oil</li>
+            </ul>
+        
+            <div class="recipe-steps">
+                <h3>Steps:</h3>
+                <ol class="steps-list">
+                    <li>Heat oil in a pan and add cumin seeds. Let them crackle.</li>
+                    <li>Add onion, ginger paste, and garlic paste. Sauté until onion turns golden brown.</li>
+                    <li>Add tomato, coriander powder, turmeric powder, red chili powder, and garam masala powder. Cook until tomato turns mushy.</li>
+                    <li>Add spinach and water. Cook until spinach wilts and turns soft.</li>
+                    <li>Blend the mixture in a blender until smooth.</li>
+                    <li>Transfer the mixture back to the pan and add cream, salt, and sugar. Cook for 2-3 minutes.</li>
+                    <li>Add paneer cubes and cook for another 2-3 minutes. Serve hot with rice or roti.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe">
+            <h2>Saag Paneer</h2>
+            <img src={% static 'saag paneer.jpeg' %} alt="Saag Paneer Image" class="recipe-image">
+            
+            <h3>Ingredients:</h3>
+            <ul class="ingredients-list">
+                <li>1 cup paneer, cubed</li>
+                <li>1 cup spinach, chopped</li>
+                <li>1/2 cup onion, chopped</li>
+                <li>1/2 cup tomato, chopped</li>
+                <li>1/2 teaspoon ginger paste</li>
+                <li>1/2 teaspoon garlic paste</li>
+                <li>1/2 teaspoon cumin seeds</li>
+                <li>1/2 teaspoon coriander powder</li>
+                <li>1/2 teaspoon turmeric powder</li>
+                <li>1/2 teaspoon red chili powder</li>
+                <li>1/2 teaspoon garam masala powder</li>
+                <li>1/2 cup water</li>
+                <li>1/2 cup cream</li>
+                <li>1/2 teaspoon salt</li>
+                <li>1/2 teaspoon sugar</li>
+                <li>1/2 teaspoon oil</li>
+            </ul>
+            
+            <div class="recipe-steps">
+                <h3>Steps:</h3>
+                <ol class="steps-list">
+                    <li>Heat oil in a pan and add cumin seeds. Let them crackle.</li>
+                    <li>Add onion, ginger paste, and garlic paste. Sauté until onion turns golden brown.</li>
+                    <li>Add tomato, coriander powder, turmeric powder, red chili powder, and garam masala powder. Cook until tomato turns mushy.</li>
+                    <li>Add spinach and water. Cook until spinach wilts and turns soft.</li>
+                    <li>Blend the mixture in a blender until smooth.</li>
+                    <li>Transfer the mixture back to the pan and add cream, salt, and sugar. Cook for 2-3 minutes.</li>
+                    <li>Add paneer cubes and cook for another 2-3 minutes. Serve hot with rice or roti.</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Add more North Indian recipes as needed -->
+
+    </div>
+
+</body>
+</html>

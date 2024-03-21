@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Indian Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .recipe-image {
+            max-width: 300%;
+            height: 400px; /* Adjust the height as needed for uniform size */
+            border-radius: 10px;
+            object-fit: cover; /* Maintain aspect ratio and cover container */
+        }
+
+        h2, h3, p, ul, ol, li {
+            margin: 0;
+            padding: 0;
+        }
+    
+        .ingredients-list, .steps-list {
+            margin-top: 10px;
+        }
+    
+        .recipe-steps {
+            margin-top: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="recipe-container">
+        <h1>South Indian Recipes</h1>
+
+        <div class="recipe">
+            <h2>Dosa</h2>
+            <img src="{% static 'dosa.jpeg' %}" alt="Dosa Image" class="recipe-image">
+
+            <h3>Ingredients:</h3>
+            <ul class="ingredients-list">
+                <li>2 cups Rice</li>
+                <li>1 cup Urad dal (black gram)</li>
+                <li>1/2 teaspoon Fenugreek seeds</li>
+                <li>Salt, to taste</li>
+                <li>Water, as needed</li>
+            </ul>
+
+            <div class="recipe-steps">
+                <h3>Steps:</h3>
+                <ol class="steps-list">
+                    <li>Wash and soak rice, urad dal, and fenugreek seeds separately for 6 hours.</li>
+                    <li>Grind rice and urad dal separately to a smooth batter.</li>
+                    <li>Mix the batters together, add salt, and let it ferment overnight.</li>
+                    <li>Heat a griddle, pour a ladle of batter, spread it in a circular motion, and cook until golden brown.</li>
+                    <li>Serve hot with chutney and sambar.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe">
+            <h2>Idiappam (String Hoppers)</h2>
+            <img src="{% static 'idiappam.jpeg' %}" alt="Dosa Image" class="recipe-image">
+
+            <h3>Ingredients:</h3>
+            <ul class="ingredients-list">
+                <li>2 cups Rice flour</li>
+                <li>1 cup Hot water</li>
+                <li>Salt, to taste</li>
+            </ul>
+
+            <div class="recipe-steps">
+                <h3>Steps:</h3>
+                <ol class="steps-list">
+                    <li>In a bowl, mix rice flour with hot water and salt to form a smooth, soft dough.</li>
+                    <li>Load the dough into an idiappam press and press out the dough onto idli plates in a circular motion.</li>
+                    <li>Steam the pressed dough for about 10-15 minutes until it's cooked.</li>
+                    <li>Serve idiappam hot with coconut milk or curry of your choice.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe">
+            <h2>Upma</h2>
+            <img src="{% static 'upma.jpg' %}" alt="Dosa Image" class="recipe-image">
+
+            <h3>Ingredients:</h3>
+            <ul class="ingredients-list">
+                <li>1 cup Semolina (Rava)</li>
+                <li>2 cups Water</li>
+                <li>1 Onion, finely chopped</li>
+                <li>1/2 cup Mixed vegetables (carrots, peas, beans)</li>
+                <li>2 Green chilies, chopped</li>
+                <li>1/2 inch Ginger, grated</li>
+                <li>1/4 cup Cashews</li>
+                <li>1/2 teaspoon Mustard seeds</li>
+                <li>1/2 teaspoon Urad dal (black gram)</li>
+                <li>1/2 teaspoon Chana dal (split chickpeas)</li>
+                <li>A pinch of Asafoetida (hing)</li>
+                <li>Curry leaves, a few</li>
+                <li>2 tablespoons Ghee or oil</li>
+                <li>Salt, to taste</li>
+            </ul>
+
+            <div class="recipe-steps">
+                <h3>Steps:</h3>
+                <ol class="steps-list">
+                    <li>In a pan, heat ghee or oil. Add mustard seeds, urad dal, chana dal, and cashews. Sauté until they turn golden.</li>
+                    <li>Add asafoetida, chopped onions, green chilies, grated ginger, and curry leaves. Sauté until onions become translucent.</li>
+                    <li>Add mixed vegetables and sauté for a few minutes.</li>
+                    <li>Meanwhile, in a separate pan, roast semolina (rava) until it turns golden and gives a nice aroma.</li>
+                    <li>Pour water into the vegetable mixture and bring it to a boil. Add salt to taste.</li>
+                    <li>Slowly add the roasted semolina, stirring continuously to avoid lumps.</li>
+                    <li>Cook on low heat until the upma thickens and is fully cooked.</li>
+                    <li>Serve hot, garnished with chopped cilantro. Enjoy your South Indian Upma!</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe">
+            <h2>Inippu Paniyaram</h2>
+            <img src="{% static 'inipu paniyaram.jpeg' %}" alt="Dosa Image" class="recipe-image">
+
+            <h3>Ingredients:</h3>
+            <ul class="ingredients-list">
+                <li>1 cup Idli/Dosa Batter</li>
+                <li>1/2 cup Jaggery, grated</li>
+                <li>1/4 cup Coconut, grated</li>
+                <li>1/2 teaspoon Cardamom powder</li>
+                <li>A pinch of Baking soda</li>
+                <li>Ghee or oil for greasing</li>
+            </ul>
+
+            <div class="recipe-steps">
+                <h3>Steps:</h3>
+                <ol class="steps-list">
+                    <li>In a bowl, mix idli/dosa batter, grated jaggery, grated coconut, cardamom powder, and baking soda.</li>
+                    <li>Heat the paniyaram pan and add a few drops of ghee or oil in each mold.</li>
+                    <li>Pour the batter into the molds and cook until the edges turn golden brown.</li>
+                    <li>Flip the paniyarams and cook the other side until fully cooked.</li>
+                    <li>Remove from the pan and serve warm. Enjoy the sweet and flavorful Inippu Paniyaram!</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe">
+            <h2>Kolukattai</h2>
+            <img src="{% static 'kolukkatai.jpeg' %}" alt="Dosa Image" class="recipe-image">
+        
+            <h3>Ingredients:</h3>
+            <ul class="ingredients-list">
+                <li>1 cup Rice flour</li>
+                <li>1/4 cup Split yellow moong dal</li>
+                <li>1/4 cup Grated coconut</li>
+                <li>1/4 cup Jaggery, grated</li>
+                <li>1/4 teaspoon Cardamom powder</li>
+                <li>A pinch of Salt</li>
+                <li>Water, as needed</li>
+                <li>Banana leaves or oil for greasing</li>
+            </ul>
+        
+            <div class="recipe-steps">
+                <h3>Steps:</h3>
+                <ol class="steps-list">
+                    <li>Soak split yellow moong dal in water for 1-2 hours.</li>
+                    <li>In a bowl, mix rice flour, soaked moong dal, grated coconut, jaggery, cardamom powder, and a pinch of salt.</li>
+                    <li>Add water gradually and knead the mixture into a smooth dough. The consistency should be such that it can be shaped easily.</li>
+                    <li>If using banana leaves, cut them into small squares and briefly pass them over an open flame to make them pliable.</li>
+                    <li>Take a small portion of the dough, shape it into a ball, and place it on the center of a banana leaf or greased surface.</li>
+                    <li>Press and flatten the ball into a circular shape, folding the edges of the leaf to encase the mixture.</li>
+                    <li>Repeat the process for the remaining dough portions.</li>
+                    <li>Steam the kolukattai for 15-20 minutes until they are cooked and firm.</li>
+                    <li>Allow them to cool slightly before serving. Enjoy your delicious Kolukattai!</li>
+                </ol>
+            </div>
+        </div>
+        
+        <div class="recipe">
+            <h2>Arusi Parupu (Dal Tadka)</h2>
+            <img src="{% static 'arusi parupu.jpeg' %}" alt="Dosa Image" class="recipe-image">
+                    
+            <h3>Ingredients:</h3>
+            <ul class="ingredients-list">
+                <li>1 cup Toor dal (split pigeon peas)</li>
+                <li>1 Onion, finely chopped</li>
+                <li>2 Tomatoes, chopped</li>
+                <li>2 Green chilies, slit</li>
+                <li>1/2 teaspoon Turmeric powder</li>
+                <li>1 teaspoon Mustard seeds</li>
+                <li>1 teaspoon Cumin seeds</li>
+                <li>A pinch of Asafoetida (hing)</li>
+                <li>2-3 Dry red chilies</li>
+                <li>A few Curry leaves</li>
+                <li>2 tablespoons Ghee or oil</li>
+                <li>Salt, to taste</li>
+                <li>Fresh coriander leaves, for garnish</li>
+            </ul>
+        
+            <div class="recipe-steps">
+                <h3>Steps:</h3>
+                <ol class="steps-list">
+                    <li>Wash and pressure cook toor dal with turmeric powder until it is soft and cooked thoroughly.</li>
+                    <li>In a pan, heat ghee or oil. Add mustard seeds, cumin seeds, asafoetida, dry red chilies, and curry leaves. Sauté until mustard seeds splutter.</li>
+                    <li>Add chopped onions and sauté until they become translucent.</li>
+                    <li>Add chopped tomatoes and green chilies. Cook until the tomatoes are soft and the oil starts to separate.</li>
+                    <li>Add the cooked toor dal to the pan. Mix well and bring it to a boil. Adjust the consistency by adding water if needed.</li>
+                    <li>Add salt to taste and simmer for a few minutes to let the flavors meld together.</li>
+                    <li>Garnish with fresh coriander leaves.</li>
+                    <li>Your Arusi Parupu (Dal Tadka) is ready to be served. Enjoy it with rice or Indian bread!</li>
+                </ol>
+            </div>
+        </div>
+        
+        
+
+        <!-- Add more recipes as needed -->
+
+    </div>
+
+</body>
+</html>

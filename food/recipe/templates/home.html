@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Lost Food Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Add background color with opacity */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-category {
+            margin-top: 20px;
+        }
+
+        .recipe-container {
+            margin-top: 15px;
+            cursor: pointer; /* Add pointer cursor to indicate clickability */
+        }
+
+        .recipe-image-container {
+            max-width: 90%;
+            height: 500px; /* Adjust the height as needed for uniform size */
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .recipe-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <h1>India Lost Food Recipes</h1>
+
+        <div class="recipe-category">
+            <h2>South Indian Recipes</h2>
+            <a href="south" class="recipe-container">
+                <div class="recipe-image-container">
+                    <img src='{% static "south.png" %}' alt="South Indian Recipe Image" class="recipe-image">
+                </div>
+                <p>Explore the rich and diverse flavors of South Indian cuisine...</p>
+            </a>
+        </div>
+
+        <div class="recipe-category">
+            <h2>North Indian Recipes</h2>
+            <a href="north" class="recipe-container">
+                <div class="recipe-image-container">
+                    <img src='{% static "north.jpeg" %}' alt="North Indian Recipe Image" class="recipe-image">
+                </div>
+                <p>Indulge in the hearty and aromatic North Indian delicacies...</p>
+            </a>
+        </div>
+
+        <div class="recipe-category">
+            <h2>Tribal Recipes</h2>
+            <a href="tribal" class="recipe-container">
+                <div class="recipe-image-container">
+                    <img src='{% static "tribal.jpeg" %}' alt="Tribal Recipe Image" class="recipe-image">
+                </div>
+                <p>Rediscover lost culinary treasures with these tribal recipes...</p>
+            </a>
+        </div>
+
+        <div class="recipe-category">
+            <h2>Desserts Recipes</h2>
+            <a href="desserts" class="recipe-container">
+                <div class="recipe-image-container">
+                    <img src='{% static "desserts.jpeg" %}' alt="Desserts Recipe Image" class="recipe-image">
+                </div>
+                <p>Discover the most loved and Desserts recipes from across India...</p>
+            </a>
+        </div>
+
+        <!-- Add more recipe categories as needed -->
+
+    </div>
+
+</body>
+</html>
